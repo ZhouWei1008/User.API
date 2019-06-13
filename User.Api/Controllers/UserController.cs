@@ -65,11 +65,16 @@ namespace User.Api.Controllers
         [Route("check-or-create")]
         [HttpPost]
         public async Task<IActionResult> CheckOrCreate(string phone) {
-
-            if (_userContext.Users.Any(x => x.Phone == phone)) {
-                _userContext.Users.Add(new Models.AppUser { Phone = phone });
+            if (string.IsNullOrWhiteSpace(phone)) {
+                throw new UserOperationException("系统繁忙");
             }
-            return Ok();
+            var user = await _userContext.Users.SingleOrDefaultAsync(x => x.Phone == phone);
+            if (user==null) {
+                user = new Models.AppUser { Phone = phone };
+                _userContext.Users.Add(user);
+                await _userContext.SaveChangesAsync();
+            }
+            return Ok(user.ID);
         }
 
     }
