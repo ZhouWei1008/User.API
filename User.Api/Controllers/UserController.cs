@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.JsonPatch;
 namespace User.Api.Controllers
 {
-    [Route("api/user")]
+    [Route("api/users")]
     public class UserController : BaseContriller
     {
         UserContext _userContext = null;

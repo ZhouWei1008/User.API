@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
-using User.Identity.Servers;
+using User.Identity.Services;
 namespace User.Identity
 {
     public class Startup
