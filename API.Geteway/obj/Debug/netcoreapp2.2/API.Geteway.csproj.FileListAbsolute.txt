@@ -1,0 +1,10 @@
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\API.Geteway.deps.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\API.Geteway.runtimeconfig.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\API.Geteway.runtimeconfig.dev.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\API.Geteway.dll
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.csproj.CoreCompileInputs.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.RazorAssemblyInfo.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.RazorAssemblyInfo.cs
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.AssemblyInfoInputs.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.AssemblyInfo.cs
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\API.Geteway.RazorTargetAssemblyInfo.cache

@@ -1,0 +1,13 @@
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\Geteway.API.deps.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\Geteway.API.runtimeconfig.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\Geteway.API.runtimeconfig.dev.json
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\Geteway.API.dll
+F:\Projects\User.Api\API.Geteway\bin\Debug\netcoreapp2.2\Geteway.API.pdb
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.csproj.CoreCompileInputs.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.RazorAssemblyInfo.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.RazorAssemblyInfo.cs
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.AssemblyInfoInputs.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.AssemblyInfo.cs
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.RazorTargetAssemblyInfo.cache
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.dll
+F:\Projects\User.Api\API.Geteway\obj\Debug\netcoreapp2.2\Geteway.API.pdb
