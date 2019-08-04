@@ -14,4 +14,8 @@
     <PackageReference Include="Polly" Version="7.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ServerRegister.Expansion\ServerRegister.Expansion.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -8,10 +8,23 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
 using User.Identity.Services;
+using DnsClient;
+using System.Net;
+using ServerRegister.Expansion.Consul;
+using Microsoft.Extensions.Configuration;
+using ServerRegister.Expansion.Consul.Entity;
+using Microsoft.Extensions.Options;
+
 namespace User.Identity
 {
     public class Startup
     {
+
+        private readonly IConfiguration Configuration;
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -21,7 +34,8 @@ namespace User.Identity
                 .AddDeveloperSigningCredential()
                 .AddInMemoryClients(config.GetClients())
                 .AddInMemoryIdentityResources(config.GetIdentityResources())
-                .AddInMemoryApiResources(config.GetApiResource());
+                .AddInMemoryApiResources(config.GetApiResource())
+                ;
 
             services.AddSingleton(new HttpClient());
 
@@ -29,6 +43,18 @@ namespace User.Identity
                 .AddScoped<IUserService, UserService>();
 
             services.AddMvc();
+
+
+
+            services.AddConuslClient(c =>
+            {
+                Configuration.Bind("ServiceDiscovery", c);
+            });
+            //TEST
+            //var _ServiceDisvoveryOption = services.BuildServiceProvider()
+            //    .GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
+            //var client = new ConsulDNSClient(_ServiceDisvoveryOption);
+            //var result = client.GetHttpClient().GetAwaiter().GetResult();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +66,10 @@ namespace User.Identity
             }
 
             app.UseIdentityServer();
+
+
+
+
             app.UseMvc();
 
         }

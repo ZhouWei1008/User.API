@@ -13,7 +13,7 @@ namespace User.Api.Controllers
     public class UserController : BaseContriller
     {
         UserContext _userContext = null;
-        ILogger<UserController> _logger;
+        //ILogger<UserController> _logger;
 
         public UserController(UserContext userContext)
         {
